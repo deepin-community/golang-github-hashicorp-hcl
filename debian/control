@@ -1,0 +1,36 @@
+Source: golang-github-hashicorp-hcl
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Tianon Gravi <tianon@debian.org>,
+           Tim Potter <tpot@hpe.com>,
+           Anthony Fok <foka@debian.org>
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper (>= 11~),
+               dh-golang,
+               golang-any,
+               golang-github-davecgh-go-spew-dev
+Standards-Version: 4.2.1
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-hashicorp-hcl
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-hashicorp-hcl.git
+Homepage: https://github.com/hashicorp/hcl
+XS-Go-Import-Path: github.com/hashicorp/hcl
+
+Package: golang-github-hashicorp-hcl-dev
+Architecture: all
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         golang-github-davecgh-go-spew-dev
+Description: Go implementation of HashiCorp Configuration Language
+ HCL (HashiCorp Configuration Language) is a configuration language built by
+ HashiCorp. The goal of HCL is to build a structured configuration language that
+ is both human and machine friendly for use with command-line tools, but
+ specifically targeted towards DevOps tools, servers, etc.
+ .
+ HCL is also fully JSON compatible. That is, JSON can be used as completely
+ valid input to a system expecting HCL. This helps makes systems interoperable
+ with other systems.
+ .
+ HCL is heavily inspired by libucl, nginx configuration, and others similar.
+ .
+ This package contains the source.

@@ -1,0 +1,61 @@
+golang-github-hashicorp-hcl (1.0.0-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 02:07:41 +0100
+
+golang-github-hashicorp-hcl (1.0.0-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Anthony Fok ]
+  * New upstream version 1.0.0
+  * Apply "cme fix dpkg" fixes to debian/control, adding
+    "Testsuite: autopkgtest-pkg-go" field, setting Priority to optional,
+    bumping Standards-Version to 4.2.1, using debhelper (>= 11~), etc.
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Fix filenamemangle option in debian/watch
+
+ -- Anthony Fok <foka@debian.org>  Fri, 21 Dec 2018 23:21:39 -0700
+
+golang-github-hashicorp-hcl (0.0~git20170509.0.392dba7-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Bump Standards-Version to 4.0.0:
+    Use https form of the copyright-format URL in debian/copyright.
+
+ -- Anthony Fok <foka@debian.org>  Sun, 09 Jul 2017 10:09:25 -0600
+
+golang-github-hashicorp-hcl (0.0~git20161215.0.80e628d-1) unstable; urgency=medium
+
+  [ Tim Potter ]
+  * Add me to uploaders
+
+  [ Anthony Fok ]
+  * New upstream version 0.0~git20161215.0.80e628d
+  * Add me to Uploaders too
+  * New dependency on golang-github-davecgh-go-spew-dev
+  * Replace DH_GOLANG_INSTALL_ALL with DH_GOLANG_INSTALL_EXTRA in debian/rules
+    to avoid installing unwanted files such as .gitignore and LICENSE
+    as detected by Lintian.
+
+ -- Anthony Fok <foka@debian.org>  Mon, 02 Jan 2017 12:03:02 -0700
+
+golang-github-hashicorp-hcl (0.0~git20160607.0.d7400db-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+  * Update debian/control
+    - Bump Standards-Version to 3.9.8 (no change)
+    - Use secure https URLs for Vcs-Git field too
+    - Change "golang-go" to "golang-any" in Build-Depends
+
+ -- Anthony Fok <foka@debian.org>  Wed, 08 Jun 2016 12:24:17 -0600
+
+golang-github-hashicorp-hcl (0.0~git20151110.0.fa160f1-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Tianon Gravi <tianon@debian.org>  Thu, 12 Nov 2015 13:24:28 -0800

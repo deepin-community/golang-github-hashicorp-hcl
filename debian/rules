@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+# tests have fixtures (especially ".hcl" files to parse)
+#export DH_GOLANG_INSTALL_ALL := 1
+export DH_GOLANG_INSTALL_EXTRA := \
+	hcl/fmtcmd/test-fixtures \
+	hcl/parser/test-fixtures \
+	hcl/printer/testdata \
+	hcl/test-fixtures \
+	json/parser/test-fixtures \
+	json/test-fixtures \
+	test-fixtures
+
+%:
+	dh $@ --buildsystem=golang --with=golang
